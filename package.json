@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@react-redux": "*",
+    "@reduxjs/toolkit": "^1.8.5",
     "@types/react": "^16.8 || ^17.0 || ^18.0",
     "@types/react-dom": "^16.8 || ^17.0 || ^18.0",
     "react": "^18.1.0",

@@ -1,11 +1,15 @@
-import React from "react";
-import "./style.css";
+import React from 'react';
+import { useSelector } from 'react-redux';
+import './style.css';
 
 export default function App() {
+  const counter = useSelector((state) => state.counter);
+  const togglecounnter = () => {};
+
   return (
     <div>
-      <h1>Hello StackBlitz!</h1>
-      <p>Start editing to see some magic happen :)</p>
+      {counter}
+      <button onClick={togglecounnter}> counter </button>
     </div>
   );
 }
