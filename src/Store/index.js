@@ -1,6 +1,6 @@
-import { createStore } from 'redux';
+import { legacy_createStore as createStore} from 'redux'
 
-const CounterReducer = (state = { initialState: 0 }, action) => {
+const CounterReducer = (state = { counter: 1 }, action) => {
   if (action.type === 'increment') {
     return {
       counter: state.counter + 1,
